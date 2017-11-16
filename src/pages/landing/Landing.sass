@@ -1,0 +1,121 @@
+@import '../../imports/colors'
+@import '../../imports/fonts'
+
+.landing
+	display: grid
+	grid-template-columns: 1fr .001fr 1fr
+
+.bold
+    font-weight: 600
+
+.intro
+    grid-column: 1 / span 2
+    display: grid
+    grid-gap: 3em
+
+.heading
+    font-size: 2em
+    font-weight: 350
+
+.formtext
+    font-size: 1.2em
+    font-weight: 350
+    text-align: left
+    padding-right: 0.5em 
+
+.formfield
+    align-content: center
+
+.login
+    grid-column: 1
+    text-align: center
+
+.register
+    grid-column: 3
+    text-align: center
+            
+.gap
+    grid-column: 2
+    background-color: $brightBlack
+
+@media (max-width: 50em)
+	
+    .login
+        grid-column: auto / span 3
+
+    .register
+        grid-column: auto / span 3
+
+    .gap
+        display: none
+
+.form
+    margin: 10px auto
+    max-width: 400px
+    padding: 20px 12px 10px 20px
+    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif
+
+    li
+        padding: 0
+        display: block
+        list-style: none
+        margin: 10px 0 0 0
+
+    label
+        margin: 0 0 3px 0
+        padding: 0px
+        display: block
+        font-weight: 500
+
+    input,
+    textarea, 
+    select
+        box-sizing: border-box
+        -webkit-box-sizing: border-box
+        -moz-box-sizing: border-box
+        border: 1px solid #BEBEBE
+        padding: 7px
+        margin: 0px
+        -webkit-transition: all 0.30s ease-in-out
+        -moz-transition: all 0.30s ease-in-out
+        -ms-transition: all 0.30s ease-in-out
+        -o-transition: all 0.30s ease-in-out
+        outline: none  
+
+        &:focus,
+            -moz-box-shadow: 0 0 8px #88D5E9
+            -webkit-box-shadow: 0 0 8px #88D5E9
+            box-shadow: 0 0 8px #88D5E9
+            border: 1px solid #88D5E9
+
+    .field-divided
+        width: 49%
+
+
+    .field-long
+        width: 100%
+
+    .field-select
+        width: 100%
+
+    .field-textarea
+        height: 100px
+
+    .submit
+        background: $brightBlue
+        padding: 8px 15px 8px 15px
+        border: none
+        color: #fff
+
+        &:hover
+            background: $dimmedBrightBlue
+            box-shadow:none
+            -moz-box-shadow:none
+            -webkit-box-shadow:none
+
+
+    .required 
+        color: $darkRed
+        font-weight: 500
+        padding-left: 0.5em
+    

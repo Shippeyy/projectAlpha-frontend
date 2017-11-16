@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
+import './App.css';
+
 import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom'
+
 import Navbar from './components/navbar/NavbarGuest'
-import './App.css';
+
+import Dashboard from './pages/dashboard/Dashboard'
+import Landing from './pages/landing/Landing'
 
 class App extends Component {
 
@@ -12,11 +17,16 @@ class App extends Component {
     return (
       <Router>
         <div className="wrapper">
-          <Navbar />
           <div className="navbarIcon">
             <a onClick={this.showSidebar}>&#9776;</a>
           </div>
 
+          <div className="content">
+            <Route exact path='/' component={Landing} />
+            <Route exact path='/dashboard' component={Dashboard} />
+          </div>
+
+          <Navbar />
         </div>
       </Router>
     )

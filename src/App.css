@@ -26,6 +26,9 @@ body {
         grid-row: 1;
         font-size: 3em;
         padding: .5em 0 0 .6em; }
+      #root .wrapper .navbarIcon:hover {
+        cursor: pointer;
+        color: #7c7c7c; }
       #root .wrapper .content {
         grid-column: 1 / span 2;
         grid-row: 2; } }

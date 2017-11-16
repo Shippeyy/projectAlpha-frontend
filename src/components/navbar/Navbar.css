@@ -13,6 +13,10 @@
         color: #cdcdcd;
         text-decoration: none;
         font-weight: 300;
-        font-size: 1.2em; }
+        font-size: 1.2em;
+        transition: all .5s; }
         .navbar ul li .link:hover {
-          color: white; }
+          font-size: 1.7em;
+          color: #4b99ad;
+          cursor: pointer;
+          transition: .3s; }

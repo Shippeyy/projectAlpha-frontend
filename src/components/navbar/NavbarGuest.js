@@ -9,7 +9,7 @@ class App extends Component {
             <div className="navbar" id="navbar">
                 <ul>
                     <li><Link className="link" onClick={this.hideSideBar} to='/'>projectAlpha</Link></li>
-                    <li><Link className="link" onClick={this.hideSideBar} to='/'>Dashboard</Link></li>
+                    <li><Link className="link" onClick={this.hideSideBar} to='/Dashboard'>Dashboard</Link></li>
                     <li><Link className="link" onClick={this.hideSideBar} to='/'>Sign in</Link></li>
                 </ul>
             </div>
