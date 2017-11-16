@@ -1,21 +1,47 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+import {
+  BrowserRouter as Router,
+  Route
+} from 'react-router-dom'
+
+import Navbar from './components/navbar/NavbarGuest'
+
+import Dashboard from './pages/dashboard/Dashboard'
+import Landing from './pages/landing/Landing'
+
 class App extends Component {
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
+      <Router>
+        <div className="wrapper">
+          <div className="navbarIcon">
+            <a onClick={this.showSidebar}>&#9776;</a>
+          </div>
+
+          <div className="content">
+            <Route exact path='/' component={Landing} />
+            <Route exact path='/dashboard' component={Dashboard} />
+          </div>
+
+          <Navbar />
+        </div>
+      </Router>
+    )
   }
+
+  showSidebar() {
+    let display = document.getElementById('navbar').style.display
+    let map = {
+      block: 'none',
+      none: 'block',
+      "": 'block'
+    }
+    document.getElementById('navbar').style.display = map[display]
+  }
+
 }
 
 export default App;

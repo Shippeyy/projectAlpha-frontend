@@ -1,0 +1,11 @@
+.home {
+  display: grid;
+  grid-template-columns: .5fr 2fr .2fr; }
+  .home .projects {
+    grid-column: 2;
+    display: grid;
+    grid-gap: 4em;
+    grid-template-columns: repeat(6, 1fr); }
+    @media (max-width: 80em) {
+      .home .projects {
+        grid-row-gap: 2em; } }

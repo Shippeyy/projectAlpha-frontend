@@ -1,0 +1,39 @@
+.preview {
+  grid-column: auto;
+  padding: 3vh 2vw 3vh 2vw;
+  margin-block-end: 1em;
+  align-self: auto;
+  border-radius: 4px;
+  transition: all .5s; }
+  .preview:nth-child(1n) {
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #4b99ad; }
+  .preview:hover {
+    border-radius: 0;
+    transition: all .5s; }
+    .preview:hover .name {
+      font-size: 1.7em;
+      transition: all 1.5s; }
+    .preview:hover .description {
+      font-size: 1.1em;
+      transition: all 0.2s; }
+  @media (max-width: 80em) {
+    .preview {
+      grid-column: auto / span 3; } }
+  @media (max-width: 50em) {
+    .preview {
+      grid-column: auto / span 6; } }
+  .preview .name {
+    font-size: 1.5em;
+    font-weight: 350;
+    padding-bottom: 4vh;
+    transition: all .2s; }
+    .preview .name .link {
+      text-decoration: none;
+      color: #2e2e2e; }
+      .preview .name .link:hover {
+        color: #000; }
+  .preview .description {
+    font-weight: 300;
+    transition: all .2s; }

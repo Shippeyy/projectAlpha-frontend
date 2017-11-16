@@ -1,0 +1,27 @@
+@import '../../imports/colors'
+
+.navbar
+	height: 100%
+	background-color: $brightBlack
+	display: flex
+	z-index: 1
+
+	ul
+		margin: 0
+		li
+			list-style-type: none
+			padding-right: 2em
+			padding-top: 4vh
+
+			.link
+				color: $white
+				text-decoration: none
+				font-weight: 300
+				font-size: 1.2em
+				transition: all .5s
+
+				&:hover
+					font-size: 1.7em
+					color: $brightBlue
+					cursor: pointer
+					transition: .3s

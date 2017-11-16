@@ -1,0 +1,22 @@
+.navbar {
+  height: 100%;
+  background-color: #2e2e2e;
+  display: flex;
+  z-index: 1; }
+  .navbar ul {
+    margin: 0; }
+    .navbar ul li {
+      list-style-type: none;
+      padding-right: 2em;
+      padding-top: 4vh; }
+      .navbar ul li .link {
+        color: #cdcdcd;
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 1.2em;
+        transition: all .5s; }
+        .navbar ul li .link:hover {
+          font-size: 1.7em;
+          color: #4b99ad;
+          cursor: pointer;
+          transition: .3s; }
