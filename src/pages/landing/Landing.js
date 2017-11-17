@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import './Landing.css'
 
+import Searchform from '../../components/searchform/Searchform'
+
 class Landing extends Component {
     render() {
         return (
@@ -8,6 +10,8 @@ class Landing extends Component {
                 <div className="intro">
                     <p className="heading">Are you ready to find <a className="bold">your</a> project?</p>
                 </div>
+
+                <Searchform />
                 
                 <div className="login">
                     <form noValidate>
