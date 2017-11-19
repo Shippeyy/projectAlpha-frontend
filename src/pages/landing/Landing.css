@@ -4,19 +4,26 @@ body {
 
 .landing {
   display: grid;
-  grid-template-columns: 1fr .001fr 1fr; }
+  grid-template-columns: 1fr 0.04em 1fr;
+    grid-template-columns-margin-bottom: 1em; }
 
 .bold {
   font-weight: 600; }
 
+.searchform {
+  grid-column: 1 / span 3; }
+
+.divider {
+  display: none; }
+
 .intro {
-  grid-column: 1 / span 2;
-  display: grid;
-  grid-gap: 3em; }
+  grid-column: 1 / span 1;
+  display: grid; }
 
 .heading {
   font-size: 2em;
-  font-weight: 350; }
+  font-weight: 350;
+  margin: 0 0 0 0; }
 
 .formtext {
   font-size: 1.2em;
@@ -45,13 +52,18 @@ body {
   .register {
     grid-column: auto / span 3; }
   .gap {
-    display: none; } }
+    display: none; }
+  .divider {
+    grid-column: auto / span 3;
+    height: 0.04em;
+    margin: 1em;
+    background-color: #2e2e2e;
+    display: block; } }
 
 .form {
   margin: 10px auto;
   max-width: 400px;
-  padding: 20px 12px 10px 20px;
-  font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
+  padding: 20px 12px 10px 20px; }
   .form li {
     padding: 0;
     display: block;

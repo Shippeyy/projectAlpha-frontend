@@ -5,7 +5,7 @@
 	.wrapper
 		display: grid
 		grid-template-columns: 200px 6fr
-		grid-template-rows: 100px 100vh
+		grid-template-rows: 10px 100vh
 		
 		.navbar
 			grid-column: 1
@@ -17,12 +17,12 @@
 
 		.content
 			grid-column: 2
-			grid-row: 1
 
 			padding: 2em
 
 		@media (max-width: 50em)
-			grid-template-columns: 50vw 6fr
+			grid-template-columns: 50% 6fr
+			grid-template-rows: 100px 100vh
 
 			.navbar
 				display: none
@@ -31,7 +31,6 @@
 				a
 					display: block
 					grid-column: 1
-					grid-row: 1
 					font-size: 3em
 					padding: .5em 0 0 .6em
 

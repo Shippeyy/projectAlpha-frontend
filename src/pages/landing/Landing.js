@@ -12,7 +12,9 @@ class Landing extends Component {
                 </div>
 
                 <Searchform />
-                
+
+                <br/>
+
                 <div className="login">
                     <form noValidate>
                         <ul className="form">
@@ -30,7 +32,11 @@ class Landing extends Component {
                         </ul>
                     </form>
                 </div>
-                <div className="gap"></div>
+
+                <div className="divider">&nbsp;</div>
+
+                <div className="gap">&nbsp;</div>
+
                 <div className="register">
                     <form noValidate>
                         <ul className="form">

@@ -28,11 +28,6 @@ const projects = [
         name: 'Project5',
         description: 'This is the fifth project.'
     },
-    {
-        id: 6,
-        name: 'Project6',
-        description: 'Lorem ipsum dolor sit amet'
-    },
 ]
 
 class Dashboard extends Component {

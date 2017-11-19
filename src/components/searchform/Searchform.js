@@ -9,7 +9,7 @@ class Searchform extends Component {
                 <form noValidate>
                     <ul className="form">
                         <li>
-                            <label>Let´s jump right into it, shall we?</label>
+                            <p className="italic lightBold">Let´s jump right into it, shall we?</p>
                             <input type="text" name="searchfield" className="field-long" placeholder="Enter keywords and get started" />
                         </li>
                         <li>
