@@ -2,32 +2,40 @@
 body {
   font-family: 'Roboto', sans-serif; }
 
-#root .wrapper {
-  display: grid;
-  grid-template-columns: 200px 6fr;
-  grid-template-rows: 10px 100vh; }
-  #root .wrapper .navbar {
-    grid-column: 1;
-    grid-row: 1 / span 2; }
-  #root .wrapper .navbarIcon a {
-    display: none; }
-  #root .wrapper .content {
-    grid-column: 2;
-    padding: 2em; }
-  @media (max-width: 50em) {
-    #root .wrapper {
-      grid-template-columns: 50% 6fr;
-      grid-template-rows: 100px 100vh; }
-      #root .wrapper .navbar {
-        display: none; }
-      #root .wrapper .navbarIcon a {
-        display: block;
-        grid-column: 1;
-        font-size: 3em;
-        padding: .5em 0 0 .6em; }
-      #root .wrapper .navbarIcon:hover {
-        cursor: pointer;
-        color: #7c7c7c; }
-      #root .wrapper .content {
-        grid-column: 1 / span 2;
-        grid-row: 2; } }
+#root {
+  height: 100%;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0; }
+  #root .wrapper {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 200px 6fr;
+    grid-template-rows: 10% 90%; }
+    #root .wrapper .navbar {
+      grid-column: 1;
+      grid-row: 1 / span 2; }
+    #root .wrapper .navbarIcon a {
+      display: none; }
+    #root .wrapper .content {
+      grid-column: 2;
+      grid-row: 1 / span 2;
+      padding: 2em; }
+    @media (max-width: 50em) {
+      #root .wrapper {
+        grid-template-columns: 50% 6fr;
+        grid-template-rows: 100px 100%; }
+        #root .wrapper .navbar {
+          grid-column: 1;
+          grid-row: 1 / span 2;
+          display: none; }
+        #root .wrapper .navbarIcon a {
+          display: block;
+          grid-column: 1;
+          font-size: 3em;
+          padding: .5em 0 0 .6em; }
+        #root .wrapper .navbarIcon:hover {
+          cursor: pointer;
+          color: #7c7c7c; }
+        #root .wrapper .content {
+          grid-column: 1 / span 2;
+          grid-row: 2; } }

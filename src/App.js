@@ -21,12 +21,13 @@ class App extends Component {
             <a onClick={this.showSidebar}>&#9776;</a>
           </div>
 
+          <Navbar />
+
           <div className="content">
             <Route exact path='/' component={Landing} />
             <Route exact path='/dashboard' component={Dashboard} />
           </div>
 
-          <Navbar />
         </div>
       </Router>
     )

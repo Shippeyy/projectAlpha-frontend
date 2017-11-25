@@ -2,63 +2,14 @@
 body {
   font-family: 'Roboto', sans-serif; }
 
-.landing {
-  display: grid;
-  grid-template-columns: 1fr 0.04em 1fr;
-    grid-template-columns-margin-bottom: 1em; }
+.italic {
+  font-style: italic; }
+
+.lightBold {
+  font-weight: 450; }
 
 .bold {
   font-weight: 600; }
-
-.searchform {
-  grid-column: 1 / span 3; }
-
-.divider {
-  display: none; }
-
-.intro {
-  grid-column: 1 / span 1;
-  display: grid; }
-
-.heading {
-  font-size: 2em;
-  font-weight: 350;
-  margin: 0 0 0 0; }
-
-.formtext {
-  font-size: 1.2em;
-  font-weight: 350;
-  text-align: left;
-  padding-right: 0.5em; }
-
-.formfield {
-  align-content: center; }
-
-.login {
-  grid-column: 1;
-  text-align: center; }
-
-.register {
-  grid-column: 3;
-  text-align: center; }
-
-.gap {
-  grid-column: 2;
-  background-color: #2e2e2e; }
-
-@media (max-width: 50em) {
-  .login {
-    grid-column: auto / span 3; }
-  .register {
-    grid-column: auto / span 3; }
-  .gap {
-    display: none; }
-  .divider {
-    grid-column: auto / span 3;
-    height: 0.04em;
-    margin: 1em;
-    background-color: #2e2e2e;
-    display: block; } }
 
 .form {
   margin: 10px auto;
@@ -114,3 +65,52 @@ body {
     color: #a30000;
     font-weight: 500;
     padding-left: 0.5em; }
+
+.landing {
+  display: grid;
+  grid-template-columns: 1fr 0.04em 1fr;
+    grid-template-columns-margin-bottom: 1em; }
+
+.searchform {
+  grid-column: 1 / span 3; }
+
+.divider {
+  display: none; }
+
+.intro {
+  grid-column: 1 / span 1;
+  display: grid; }
+
+.heading {
+  font-size: 2em;
+  font-weight: 350;
+  margin: 0 0 0 0; }
+
+.formtext {
+  font-size: 1.2em;
+  font-weight: 350;
+  text-align: left;
+  padding-right: 0.5em; }
+
+.formfield {
+  align-content: center; }
+
+.login {
+  grid-column: 1;
+  text-align: center; }
+
+.register {
+  grid-column: 3;
+  text-align: center; }
+
+@media (max-width: 50em) {
+  .login {
+    grid-column: auto / span 3; }
+  .register {
+    grid-column: auto / span 3; }
+  .divider {
+    grid-column: auto / span 3;
+    height: 0.04em;
+    margin: 1em;
+    background-color: #2e2e2e;
+    display: block; } }

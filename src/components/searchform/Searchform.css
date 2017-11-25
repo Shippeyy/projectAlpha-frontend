@@ -2,18 +2,19 @@
 body {
   font-family: 'Roboto', sans-serif; }
 
-.searchform {
-  width: 100%; }
-
 .italic {
   font-style: italic; }
 
 .lightBold {
   font-weight: 450; }
 
+.bold {
+  font-weight: 600; }
+
 .form {
-  text-align: center;
-  margin: auto; }
+  margin: 10px auto;
+  max-width: 400px;
+  padding: 20px 12px 10px 20px; }
   .form li {
     padding: 0;
     display: block;
@@ -45,13 +46,25 @@ body {
       -webkit-box-shadow: 0 0 8px #88D5E9;
       box-shadow: 0 0 8px #88D5E9;
       border: 1px solid #88D5E9; }
+  .form .field-divided {
+    width: 49%; }
   .form .field-long {
     width: 100%; }
   .form .field-select {
     width: 100%; }
+  .form .field-textarea {
+    height: 100px; }
   .form .submit {
     background: #4b99ad;
+    padding: 8px 15px 8px 15px;
     border: none;
     color: #fff; }
     .form .submit:hover {
       background: #4791a4; }
+  .form .required {
+    color: #a30000;
+    font-weight: 500;
+    padding-left: 0.5em; }
+
+.searchform {
+  width: 100%; }

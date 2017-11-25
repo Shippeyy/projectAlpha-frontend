@@ -1,13 +1,9 @@
-@import '../../imports/colors'
-@import '../../imports/fonts'
+@import '../../imports/global'
 
 .landing
 	display: grid
 	grid-template-columns: 1fr 0.04em 1fr
     margin-bottom: 1em
-
-.bold
-    font-weight: 600
 
 .searchform
     grid-column: 1 / span 3
@@ -40,10 +36,6 @@
 .register
     grid-column: 3
     text-align: center
-            
-.gap
-    grid-column: 2
-    background-color: $brightBlack
 
 
 @media (max-width: 50em)
@@ -54,82 +46,10 @@
     .register
         grid-column: auto / span 3
 
-    .gap
-        display: none
-
     .divider
         grid-column: auto / span 3
         height: 0.04em
         margin: 1em
         background-color: $brightBlack
         display: block
-
-.form
-    margin: 10px auto
-    max-width: 400px
-    padding: 20px 12px 10px 20px
-
-    li
-        padding: 0
-        display: block
-        list-style: none
-        margin: 10px 0 0 0
-
-    label
-        margin: 0 0 3px 0
-        padding: 0px
-        display: block
-        font-weight: 500
-
-    input,
-    textarea, 
-    select
-        box-sizing: border-box
-        -webkit-box-sizing: border-box
-        -moz-box-sizing: border-box
-        border: 1px solid #BEBEBE
-        padding: 7px
-        margin: 0px
-        -webkit-transition: all 0.30s ease-in-out
-        -moz-transition: all 0.30s ease-in-out
-        -ms-transition: all 0.30s ease-in-out
-        -o-transition: all 0.30s ease-in-out
-        outline: none  
-
-        &:focus,
-            -moz-box-shadow: 0 0 8px #88D5E9
-            -webkit-box-shadow: 0 0 8px #88D5E9
-            box-shadow: 0 0 8px #88D5E9
-            border: 1px solid #88D5E9
-
-    .field-divided
-        width: 49%
-
-
-    .field-long
-        width: 100%
-
-    .field-select
-        width: 100%
-
-    .field-textarea
-        height: 100px
-
-    .submit
-        background: $brightBlue
-        padding: 8px 15px 8px 15px
-        border: none
-        color: #fff
-
-        &:hover
-            background: $dimmedBrightBlue
-            box-shadow:none
-            -moz-box-shadow:none
-            -webkit-box-shadow:none
-
-
-    .required 
-        color: $darkRed
-        font-weight: 500
-        padding-left: 0.5em
     
