@@ -1,11 +1,16 @@
-@import 'imports/fonts'
-@import 'imports/colors'
+@import './imports/fonts'
+@import './imports/colors'
 
 #root
+	height: 100%
+	padding: 0 0 0 0
+	margin: 0 0 0 0
+
 	.wrapper
 		display: grid
+		height: 100%
 		grid-template-columns: 200px 6fr
-		grid-template-rows: 10px 100vh
+		grid-template-rows: 10% 90%
 		
 		.navbar
 			grid-column: 1
@@ -17,14 +22,16 @@
 
 		.content
 			grid-column: 2
-
+			grid-row: 1 / span 2
 			padding: 2em
 
 		@media (max-width: 50em)
 			grid-template-columns: 50% 6fr
-			grid-template-rows: 100px 100vh
+			grid-template-rows: 100px 100%
 
 			.navbar
+				grid-column: 1
+				grid-row: 1 / span 2
 				display: none
 
 			.navbarIcon
